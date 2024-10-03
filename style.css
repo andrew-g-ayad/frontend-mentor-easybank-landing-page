@@ -11,6 +11,12 @@
   --clr-light-grayish-blue: hsl(220, 16%, 96%);
   --clr-very-light-grayish-blue: hsl(0, 0%, 98%);
   --clr-white: hsl(0, 0%, 100%);
+
+  /* Sizes Variables */
+  --mobile-screen: 375px;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-700: 700;
 }
 body {
   font-family: 'Public Sans', sans-serif;
