@@ -22,6 +22,7 @@ body {
   font-family: 'Public Sans', sans-serif;
   font-optical-sizing: auto;
   font-size: 18px;
+  text-align: center;
 }
 * {
   box-sizing: border-box;
@@ -32,5 +33,60 @@ img {
   max-width: 100%;
 }
 
+/* Util Classes */
+.btn {
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+}
+.btn.btn-cta {
+  background: linear-gradient(
+    to right,
+    var(--clr-lime-green),
+    var(--clr-bright-cyan)
+  );
+  color: var(--clr-white);
+  font-weight: var(--fw-700);
+}
+
+/* Header */
+.header {
+  background-color: var(--clr-white);
+  padding-bottom: 5rem;
+}
+/* Header Image */
+.header .intro {
+  position: absolute;
+  z-index: 1;
+}
+/* Header phones */
+.header .mockups {
+  position: relative;
+  margin-top: -6rem;
+  z-index: 20;
+}
+/* Header Message */
+.header .message {
+  padding-inline: 1.75rem;
+}
+.header .message h1 {
+  font-weight: var(--fw-400);
+  color: var(--clr-dark-blue);
+}
+.header .message p {
+  font-weight: var(--fw-400);
+  color: var(--clr-grayish-blue);
+  font-size: 14px;
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+}
+.header .message button {
+  margin-top: 2rem;
+}
+/* Easybank Section */
+section.why-choose {
+  background-color: var(--clr-very-light-grayish-blue);
+  padding-block: 5rem;
+}
 @media (min-width: var(--mobile-screen)) {
 }
