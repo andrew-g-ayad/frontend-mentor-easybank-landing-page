@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script src="./script.js" defer></script>
 
     <title>Frontend Mentor | Easybank landing page</title>
 
@@ -26,11 +27,26 @@
     </style>
   </head>
   <body>
+    <nav class="main_nav container flex-row">
+      <div class="logo"><img src="./images/logo.svg" alt="logo" /></div>
+      <button id="toggle" class="btn-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="backdrop" class="backdrop">
+        <ul id="menu" class="menu">
+          <li><a href="#" class="nav_link">Home</a></li>
+          <li><a href="#" class="nav_link">About</a></li>
+          <li><a href="#" class="nav_link">Contact</a></li>
+          <li><a href="#" class="nav_link">Blog</a></li>
+          <li><a href="#" class="nav_link">Careers</a></li>
+        </ul>
+      </div>
+    </nav>
     <header class="header container">
       <div class="image_container">
         <picture class="intro">
           <source
-            media="(min-width: 375px)"
+            media="(min-width: 50rem)"
             srcset="images/bg-intro-desktop.svg"
           />
           <img src="images/bg-intro-mobile.svg" alt="Intro Image" />
